@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Test</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <app-root></app-root>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_w4XUYYC0ws236QTsmA_FrnhT3kimEnY&libraries=places"
+    >
+        function initMap() {
+        // 確保在地圖API載入後再執行初始化
+        window.mapLoaded = true;
+      }
+    </script>
+  </body>
+</html>

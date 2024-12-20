@@ -1,0 +1,42 @@
+.place-list {
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  font-family: '微軟正黑體';
+  font-weight: 700;
+}
+
+.place-card {
+  flex: 0 0 20%; // 每個card占容器的 30% 寬度
+  height: 300px;
+  box-sizing: border-box;
+  margin: 10px 0;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.place-image{
+  margin-bottom: 10px;
+  width: 200px;
+  height: 130px;
+}
+
+.place-card:hover {
+  transform: scale(0.98);
+  background-color: #F5C170;
+}
+
+.place-card h3 {
+  font-size: 18px;
+  margin: 0 0 10px;
+
+}
+
+.place-card p {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+}

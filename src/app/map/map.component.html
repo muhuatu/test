@@ -1,0 +1,37 @@
+<div
+  style="margin-top: 20px; display: flex; gap: 15px; justify-content: center"
+>
+  <!-- 搜尋框 -->
+  <input
+    id="search-box"
+    type="text"
+    placeholder="搜尋地點..."
+    style="
+      width: 300px;
+      padding: 8px;
+      border: 1px solid gray;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    "
+  />
+
+  <!-- 模式選擇 -->
+  <select id="mode-toggle" style="margin-bottom: 10px; padding: 8px;border-radius: 8px;">
+    <option value="map">地圖模式</option>
+    <option value="list">列表模式</option>
+  </select>
+
+  <!-- 類型選擇 -->
+  <select id="place-type" style="margin-bottom: 10px; padding: 8px; border-radius: 8px;">
+    <option value="tourist_attraction">旅遊景點</option>
+    <option value="restaurant">餐廳</option>
+    <option value="park">公園</option>
+    <option value="museum">博物館</option>
+  </select>
+</div>
+
+<!-- 景點清單 -->
+<ul id="place-list" class="place-list"></ul>
+
+<!-- 地圖容器 -->
+<div id="map" style="height: 500px; width: 80%; margin: 0 auto"></div>
